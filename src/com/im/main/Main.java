@@ -1,23 +1,18 @@
 package com.im.main;
 
-import com.im.animal.Cat;
-import com.im.animal.Human;
-import com.im.animal.Zoo;
+import com.im.terran.Marine;
+import com.im.zerg.Hydra;
 
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		//Cat cat = new Cat();
-		//cat.sound();
-		//cat.age=5;
-		Human human = new Human();
-		//human.age = 10;
-		human.setAge(40);
-		human.info();
+		Marine m1 = new Marine();
+		m1.setHp(30);
+		Hydra h1 = new Hydra();
+		h1.attack();
+		m1.info();
+		m1.move();
 		
-		System.out.println(Zoo.title);
-		Zoo.info();
 	}
 
 }
