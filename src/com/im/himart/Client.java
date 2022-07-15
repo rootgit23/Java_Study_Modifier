@@ -17,27 +17,12 @@ public class Client {
 		System.out.println(" 현재 포인트 : " + this.point);
 	}
 	
-	public void buy(Tv tv) {
-		this.money = this.money - tv.getPrice();
-		this.point = this.point + tv.getPoint();
+	public void buy(Product product) {
+		this.money = this.money - product.getPrice();
+		this.point = this.point + product.getPoint();
 		System.out.print("현재 남은 금액 : " + this.money);
 		System.out.println(" 현재 포인트 : " + this.point);
 	}
-	
-	public void buy(Computer com) {
-		this.money = this.money - com.getPrice();
-		this.point = this.point + com.getPoint();
-		System.out.print("현재 남은 금액 : " + this.money);
-		System.out.println(" 현재 포인트 : " + this.point);
-	}
-	
-	public void buy(Phone phone) {
-		this.money = this.money - phone.getPrice();
-		this.point = this.point + phone.getPoint();
-		System.out.print("현재 남은 금액 : " + this.money);
-		System.out.println(" 현재 포인트 : " + this.point);
-	}
-	
 
 	public int getMoney() {
 		return money;

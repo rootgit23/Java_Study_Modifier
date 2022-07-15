@@ -18,18 +18,7 @@ public class Main {
 		tv.info();
 		
 		Client client = new Client();
-		Scanner sc = new Scanner(System.in);
-		System.out.println("핸드폰(1),컴퓨터(2),TV(3) 중에 고르세요");
-		int a = sc.nextInt();
-		if(a == 1) {
-			client.buy(phone.getPrice(), phone.getPoint());
-		}
-		else if(a == 2) {
-			client.buy(com.getPrice(), com.getPoint());
-		}
-		else {
-			client.buy(tv.getPrice(), tv.getPoint());
-		}
+		client.buy(tv);
 	}
 
 }
