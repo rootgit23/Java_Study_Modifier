@@ -1,5 +1,9 @@
 package com.im.main;
 
+import com.im.util.CollectionQueue;
+import com.im.util.CollectionSet;
+import com.im.util.CollectionStack;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -14,7 +18,41 @@ public class Main {
 			//add 입력한 새로운 숫자 추가를 맨 마지막 인덱스에 단 중복되지 않는 숫자만 가능
 			//remove 삭제할 숫자를 입력받아서 일치하는 숫자 삭제
 		//전부 배열 리턴
-		
+		int [] num = {1,2,3};
+		int [] a;
+		CollectionStack cs = new CollectionStack();
+		CollectionQueue cq = new CollectionQueue();
+		CollectionSet css = new CollectionSet();
+		a = cs.add(num);
+		for(int i=0; i<a.length; i++) {
+			System.out.println(a[i]);	
+		}
+		System.out.println("---------------------");
+		a = cs.remove(a);
+		for(int i=0; i<a.length; i++) {
+			System.out.println(a[i]);		
+		}
+		System.out.println("---------------------");
+		a = cq.add(a);
+		for(int i=0; i<a.length; i++) {
+			System.out.println(a[i]);	
+		}
+		System.out.println("---------------------");
+		a = cq.remove(a);
+		for(int i=0; i<a.length; i++) {
+			System.out.println(a[i]);		
+		}
+		System.out.println("---------------------");
+		a = css.add(a);
+		for(int i=0; i<a.length; i++) {
+			System.out.println(a[i]);	
+		}
+		System.out.println("---------------------");
+		a = css.remove(a);
+		for(int i=0; i<a.length; i++) {
+			System.out.println(a[i]);
+		}
+		System.out.println("---------------------");
 	}
 
 }

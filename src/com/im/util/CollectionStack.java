@@ -18,8 +18,10 @@ public class CollectionStack implements Collection {
 	
 	public int [] remove(int [] numbers) {
 		int [] numbersStack2 = new int [numbers.length-1];
-		for(int i=0; i<numbers.length; i++) {
-			numbersStack2[i] = numbers[i+1];
+		int index = 1;
+		for(int i=0; i<numbers.length-1; i++) {
+			numbersStack2[i] = numbers[index];
+			index++;
 		}
 		return numbersStack2;
 	}
