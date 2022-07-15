@@ -18,6 +18,9 @@ public class Main {
 		m1.info();
 		m1.move();
 		
+		m1.attack();
+		h1.attack();
+		
 	}
 
 }

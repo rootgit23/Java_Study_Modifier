@@ -1,8 +1,9 @@
 package com.im.zerg;
 
+import com.im.unit.Attacker;
 import com.im.unit.Unit;
 
-public class Hydra extends Unit {
+public class Hydra extends Unit implements Attacker {
 	
 	public Hydra() {
 		super(30);
